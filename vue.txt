@@ -1,0 +1,12 @@
+常用指令
+v-model可用于一些表单元素,常见的input,checkbox,radio,select:
+v-for 列表渲染 渲染table中的td时，需要table标签，否则不进行渲染
+v-on 完成事件处理与绑定
+v-if用于条件判断，和v-else是一对
+<template>标签，用于包含多个元素，当元素只有一个时，直接在元素上用v-if即可
+v-show作用与v-if类似，不同的是v-show的元素会始终渲染并保持在 DOM 中,且v-show不支持<template>标签
+Vue.filter在2.0中需要自定义，自定义Vue.filter需要在new Vue之前，否则不生效
+computed依赖缓存，只有相关依赖发生改变时才会重新取值，而methods，在重新渲染的时候，函数总会重新调用执行，可以说使用 computed 性能会更好，但是如果你不希望缓存，你可以使用 methods 属性。computed默认是getter
+
+接下来你需要将app.html中运行在一个服务器中，否则由于浏览器安全的限制，是无法直接读取的，如果你嫌麻烦可以用这个参数启动chrome。
+.\chrome.exe --allow-file-access-from-files
